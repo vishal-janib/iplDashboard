@@ -1,4 +1,7 @@
 /* Write your CSS here */
+.linkEl {
+  text-decoration: none;
+}
 .team-names-logo-card {
   display: flex;
   justify-content: center;
