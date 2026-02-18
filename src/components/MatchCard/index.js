@@ -22,7 +22,7 @@ const MatchCard = props => {
         src={competingTeamLogo}
         alt={competingTeam}
       />
-      <p className="competingTeam">{competingTeam}</p>
+      <h3 className="competingTeam">{competingTeam}</h3>
       <p className="result">{result}</p>
       <p className="matchStatus">{matchStatus}</p>
     </li>

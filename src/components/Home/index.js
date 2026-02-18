@@ -37,17 +37,19 @@ class Home extends Component {
           />
           <h1 className="ipl-board-heading">IPL Dashboard</h1>
         </div>
-        <ul className="list-ipl-cards-container">
+        <div>
           {isLoading ? (
             <div data-testid="loader">
               <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
             </div>
           ) : (
-            allTeams.map(eachItem => (
-              <TeamCard allTeamNames={eachItem} key={eachItem.id} />
-            ))
+            <ul className="list-ipl-cards-container">
+              {allTeams.map(eachItem => (
+                <TeamCard allTeamNames={eachItem} key={eachItem.id} />
+              ))}
+            </ul>
           )}
-        </ul>
+        </div>
       </div>
     )
   }

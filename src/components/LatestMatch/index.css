@@ -1,22 +1,14 @@
 /* Write your CSS here */
 .latest-match-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #1e293b;
   border-radius: 10px;
   padding: 15px;
 }
 .competingTeam {
-  font-size: 30px;
   color: white;
   font-family: 'Bree Serif';
 }
-.latest-match-team-logo {
-  height: 25vh;
-}
 .text {
-  font-size: 15px;
   color: white;
   font-family: 'Bree Serif';
 }
@@ -26,11 +18,86 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+.text-color {
+  color: antiquewhite;
+}
 
 @media (min-width: 768px) {
+  .latest-match-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-latest-match-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+  }
+  .latest-match-team-logo {
+    height: 25vh;
+  }
+  .hor-line {
+    display: none;
+  }
   .other-team-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    padding-right: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .latest-match-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    align-items: center;
+  }
+  .sub-latest-match-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .latest-match-team-logo {
+    height: 15vh;
+  }
+  .hor-line {
+    display: block;
+  }
+  .other-team-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-right: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .latest-match-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    align-items: center;
+  }
+  .sub-latest-match-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .latest-match-team-logo {
+    height: 9vh;
+  }
+  .hor-line {
+    display: block;
+  }
+  .other-team-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
   }
 }

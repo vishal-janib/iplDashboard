@@ -1,29 +1,34 @@
 /* Write your CSS here */
 .each-Team-cards {
   background-color: #1e293b;
-  padding: 15px;
-  margin: 10px;
+  padding: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex: 1;
+  text-align: center;
 }
 .competingTeamLogo {
-  height: 20vh;
+  height: 15vh;
 }
 .competingTeam {
   color: white;
-  font-size: 25px;
   font-family: 'Bree Serif';
 }
 .result {
   color: white;
-  font-size: 15px;
   font-family: 'Bree Serif';
 }
 .matchStatus {
   color: #18ed66;
-  font-size: 20px;
   font-family: 'Bree Serif';
+}
+@media (max-width: 500px) {
+  .each-Team-cards {
+    width: 150px;
+  }
+  .competingTeamLogo {
+    height: 9vh;
+  }
 }
