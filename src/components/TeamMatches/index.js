@@ -6,7 +6,7 @@ import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import LatestMatch from '../LatestMatch'
 import './index.css'
 
-class Teammatches extends Component {
+class TeamMatches extends Component {
   state = {
     teamDetails: {},
     latestDetailsMatch: {},
@@ -101,4 +101,4 @@ class Teammatches extends Component {
   }
 }
 
-export default Teammatches
+export default TeamMatches
